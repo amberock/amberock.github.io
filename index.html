@@ -1,0 +1,179 @@
+<!DOCTYPE html>
+<html>
+  <link rel="stylesheet" href="my.css">
+  <head runat="server">
+  <h1 contentEditable="true">my special bingo</h1>
+
+  <table>
+    <table>
+      <tr>
+        <td>
+          <div class="content" contentEditable="true"> <br> <br> make</div>
+        </td>
+        <td>
+          <div class="content" contentEditable="true"> <br> <br> your</div>
+        </td>
+        <td>
+          <div class="content" contentEditable="true"> <br> <br> own</div>
+        </td>
+        <td>
+          <div class="content" contentEditable="true"> <br> <br> special</div>
+        </td>
+        <td>
+          <div class="content" contentEditable="true"> <br> <br> bingo</div>
+        </td>
+      </tr>
+
+      <tr>
+        <td>
+          <div class="content" contentEditable="true"> <br> <br> click</div>
+        </td>
+        <td>
+          <div class="content" contentEditable="true"> <br> <br> text </div>
+        </td>
+        <td>
+          <div class="content" contentEditable="true"> <br> <br> to</div>
+        </td>
+        <td>
+          <div class="content" contentEditable="true"> <br> <br> edit</div>
+        </td>
+        <td>
+          <div class="content" contentEditable="true"> <br> <br> boxes</div>
+        </td>
+      </tr>
+
+      <tr>
+        <td>
+          <div class="content" contentEditable="true"> <br> <br> words</div>
+        </td>
+        <td>
+          <div class="content" contentEditable="true"> <br> <br> words</div>
+        </td>
+        <td>
+          <div class="content" contentEditable="true"> <br> <br> free space</div>
+        </td>
+        <td>
+          <div class="content" contentEditable="true"> <br> <br> words</div>
+        </td>
+        <td>
+          <div class="content" contentEditable="true"> <br> <br> words</div>
+        </td>
+      </tr>
+
+      <tr>
+        <td>
+          <div class="content" contentEditable="true"> <br> <br> click</div>
+        </td>
+        <td>
+          <div class="content" contentEditable="true"> <br> <br> emojis</div>
+        </td>
+        <td>
+          <div class="content" contentEditable="true"> <br> <br> to</div>
+        </td>
+        <td>
+          <div class="content" contentEditable="true"> <br> <br> change</div>
+        </td>
+        <td>
+          <div class="content" contentEditable="true"> <br> <br> colors</div>
+        </td>
+      </tr>
+
+      <tr>
+        <td>
+          <div class="content" contentEditable="true"> <br> <br> made</div>
+        </td>
+        <td>
+          <div class="content" contentEditable="true"> <br> <br> by</div>
+        </td>
+        <td>
+          <div class="content" contentEditable="true"> <br> <br> amber</div>
+        </td>
+        <td>
+          <div class="content" contentEditable="true"> <br> <br> rock</div>
+        </td>
+        <td>
+          <div class="content" contentEditable="true"> <br> <br> @amber<br>boulder </div>
+        </td>
+      </tr>
+
+      <table>
+
+        <br>
+
+        <div id="changeColor" align="center">
+            <button class="btnBlue" onclick="getBlue()"><input type="image" src="pics/blue.png" width= 50vw height=50vh name="blue" id="blue" alt="blue" /></button>
+            <button class="btnRed" onclick="getRed()"><input type="image" src="pics/red.png" width= 50vw height=50vh name="red" id="red" alt="red"/></button>
+            <button class="btnGreen" onclick="getGreen()"><input type="image" src="pics/green.png" width= 50vw height=50vh alt ="green" name="green" id="green"/></button>
+            <button class="btnYellow" onclick="getYellow()"><input type="image" src="pics/yellow.png" width= 50vw height=50vh name="yellow" id="yellow" alt="yellow"/></button>
+            <button class="btnPink" onclick="getPink()"><input type="image" src="pics/pink.png" width= 50vw height=50vh name="pink" id="pink" alt="pink"/></button>
+            <button class="btnBlack" onclick="getBlack()"><input type="image" src="pics/black.png" width= 50vw height=50vh name="black" id="black" alt="black"/></button>
+      </div>
+
+
+      
+
+
+        <script>
+          function getBlue() {
+            document.documentElement.style.setProperty('--main-bg-pic', 'url(bg/blueB.jpg)');
+            document.documentElement.style.setProperty('--main-bg-color', 'paleturquoise');
+            document.documentElement.style.setProperty('--main-txt-color', 'white');
+            document.documentElement.style.setProperty('--main-box-color', '#173949');
+          }
+          function getPink() {
+            document.documentElement.style.setProperty('--main-bg-pic', 'url(bg/pinkB.jpg)');
+            document.documentElement.style.setProperty('--main-bg-color', 'pink');
+            document.documentElement.style.setProperty('--main-txt-color', 'white');
+            document.documentElement.style.setProperty('--main-box-color', 'palevioletred');
+          }
+          function getYellow() {
+            document.documentElement.style.setProperty('--main-bg-pic', 'url(bg/yellowB.jpg)');
+            document.documentElement.style.setProperty('--main-bg-color', 'lemonchiffon');
+            document.documentElement.style.setProperty('--main-txt-color', 'white');
+            document.documentElement.style.setProperty('--main-box-color', '#DB9D00');
+          }
+          function getGreen() {
+            document.documentElement.style.setProperty('--main-bg-pic', 'url(bg/greenB.jpg)');
+            document.documentElement.style.setProperty('--main-bg-color', 'honeydew');
+            document.documentElement.style.setProperty('--main-txt-color', 'white');
+            document.documentElement.style.setProperty('--main-box-color', '#09381C');
+          }
+          function getRed() {
+            document.documentElement.style.setProperty('--main-bg-pic', 'url(bg/redB.jpg)');
+            document.documentElement.style.setProperty('--main-bg-color', 'pink');
+            document.documentElement.style.setProperty('--main-txt-color', 'white');
+            document.documentElement.style.setProperty('--main-box-color', '#5B1717');
+          }
+          function getBlack() {
+            document.documentElement.style.setProperty('--main-bg-pic', 'url(bg/blackB.jpg)');
+            document.documentElement.style.setProperty('--main-bg-color', 'lightgray');
+            document.documentElement.style.setProperty('--main-txt-color', 'white');
+            document.documentElement.style.setProperty('--main-box-color', '#232528');
+          }
+
+         
+        
+          </script>
+
+<script>
+    function myFunction() {
+      document.getElementById("demo").style.fontSize = "25px";
+      document.getElementById("demo").style.color = "red";
+      document.getElementById("demo").style.backgroundColor = "yellow";
+    }
+
+  </script>
+
+
+        
+
+
+
+        <!--
+        <a href="pics/pink.png">
+            <img alt="pink" src="pics/pink.png" />
+        </a>
+        
+-->
+
+</html>
